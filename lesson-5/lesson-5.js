@@ -45,16 +45,26 @@ var products = [
         productsId: '3'
     }
 ];
-/*
+
 function totalBasket(products){
     var $exercise2 = document.getElementById('exercise-2');
-    var $basket;
+    var $cartName = document.createElement('div');
+    var $cartPrice = document.createElement('div');
+    var $cartQuantity = document.createElement('div');
+    var $cartSumm = document.createElement('div');
+    var $basket = document.createElement('div');
+    $cartName.className = 'name';
+    $cartPrice.className = 'price';
+    $cartQuantity.className = 'quantity';
+    $cartSumm.className = 'summ-product';
     if(products.lentgh > 0){
         for(var i = 0; i < products.lentgh; i++){
-            products[i].price * products[i].quantity;
+            $cartName.textContent = products[i].name;
+            $cartPrice.textContent = products[i].price;
+            $cartQuantity.textContent = products[i].quantity;
+            $cartSumm.textContent = products[i].price * products[i].quantity;
         }
     } else(
-        $basket = document.createElement('div');
         $basket.className = 'empty-basket';
         return $basket;
     )
