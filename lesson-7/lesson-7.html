@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lesson-7.css">
+    <script src="products.js"></script>
+    <script src="lesson-7.js"></script>
+    <title>JS. Lesson-7</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Интернет магазин</h1>
+            <div class="basket" id="basket"></div>
+        </div>
+    </header>
+    <div class="contayner-products" id="contayner-products">
+        <div class="template" id="template">
+            <div class="card-product">
+                <h3 class="product-name"></h3>
+                <span class="product-img"></span>
+                <p class="product-description"></p>
+                <p class="prouct-price-box">Цена: <span class="product-price"></span></p>
+                <input type="hidden">
+                <button class="basket-button">В корзину</button>  
+            </div>
+            <div class="basket__box" id="basket-empty">Корзина пуста.</div>
+            <div class="basket__box" id="shopping-basket">
+                <h3 class="basket__name">Корзина</h3>
+                <span class="basket__quantity">Всего товаров: <span id="total-quantity"></span></span>
+                <span class="basket__sum">Сумма товаров: <span id="total-amount"></span></span>
+                <button class="remove">+</button>
+            </div>
+            <div class="basket__drop-down"></div>
+            <div class="basket__drop-down-card">
+                <div class="drop-down__img" style="background-image: url('img/Apple_IPhone_XR.jpg');"></div>
+                <div class="drop-down__content">
+                    <span class="drop-down__name">Название</span>
+                    <span class="drop-down__price">Цена: <span id="drop-down__price">200</span></span>
+                    <span class="drop-down__quantity">Количество <button class="drop-down__button-quantity">-</button><span id="drop-down__quantity">200</span><button class="drop-down__button-quantity">+</button></span>
+                    <span class="drop-down__sum">Сумма: <span id="drop-down__sum"></span></span>
+                    <button class="remove">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
